@@ -40,7 +40,7 @@
                 </div>
     
                 <div class="topBtns flex items-center gap-4 lg:gap-5 pr-10 lg:pr-0">
-                    <a href="#!" class="btn font-medium transition-colors hover:text-secondary active:text-secondary">Log In</a>
+                    <a href="#!" class="btn whitespace-nowrap font-medium transition-colors hover:text-secondary active:text-secondary">Log In</a>
                     <a href="#!" class="btn font-medium rounded-md px-3 py-2 hidden sm:block transition-colors bg-primary hover:bg-secondary text-slate-100">Get Started</a>
 
                     <div class="social hidden lg:flex items-center gap-2 lg:gap-4">
@@ -57,9 +57,30 @@
     <main>
 
         <!--  -->
-        <section class="bg-#ffffff">
-            <div class="container">
+        <section class="bg-amber-100 shadow-md">
+            <div class="container px-3">
+                <div class="flex flex-col gap-3 md:flex-row items-center justify-between py-4">
+                    <h4 class="text-lg md:text-2xl font-medium text-secondary">You are Invited to Join this Batch</h4>
+                    <button class="px-6 lg:px-24 py-3 rounded-md text-slate-100 bg-green-600 hover:bg-green-700">Accept & Proceed to Pay</button>
+                </div>
+            </div>
+        </section>
 
+        <!--  -->
+        <section class="shadow-md">
+            <div class="container px-2">
+                <div class="flex flex-col gap-3 md:flex-row items-center justify-between py-4">
+                    <a href="#!" class="flex gap-2 items-center text-xl hover:text-primary">
+                        <img src="img/icons/arrow-left.svg" class="h-5" alt=""> Back
+                    </a>
+
+                    <div class="flex flex-col gap-2 items-center justify-center">
+                        <p class="text-lg md:text-xl font-medium text-secondary">Accepting Students</p>
+                        <button class="px-6 py-2 rounded-3xl border border-primary hover:bg-primary text-primary hover:text-slate-100 transition-all text-sm lg:text-xl">Last date for applying <strong>28 March, 2023</strong></button>
+                    </div>
+
+                    <button class="flex items-center gap-2 px-6 py-2 rounded-xl border bg-secondary hover:bg-purple-900 text-slate-100 transition-all text-sm lg:text-lg">Invite Your Friends <img src="img/icons/share.svg" alt="" class="h-6 fill-current"></button>
+                </div>
             </div>
         </section>
 
