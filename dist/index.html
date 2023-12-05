@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnthuZiastic - Assessment</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="">
@@ -41,7 +42,7 @@
     
                 <div class="topBtns flex items-center gap-4 lg:gap-5 pr-10 lg:pr-0">
                     <a href="#!" class="btn whitespace-nowrap font-medium transition-colors hover:text-secondary active:text-secondary">Log In</a>
-                    <a href="#!" class="btn font-medium rounded-md px-3 py-2 hidden sm:block transition-colors bg-primary hover:bg-secondary text-slate-100">Get Started</a>
+                    <a href="#!" class="btn font-medium rounded-md px-3 py-2 hidden sm:block transition-colors bg-primary hover:bg-secondary text-sm md:text-base text-slate-100">Get Started</a>
 
                     <div class="social hidden lg:flex items-center gap-2 lg:gap-4">
                         <a href="#!"><img src="img/logos_whatsapp-icon.svg" alt="EnthuZiastic WhatsApp"></a>
@@ -68,7 +69,7 @@
 
         <!--  -->
         <section class="bg-white shadow-md relative">
-            <div class="container pt-4 pb-2">
+            <div class="container px-3 pt-4 pb-2">
                 <div class="flex flex-col gap-3 md:flex-row items-center justify-between py-4">
                     <a href="#!" class="flex gap-2 items-center text-xl hover:text-primary">
                         <img src="img/icons/arrow-left.svg" class="h-5" alt=""> Back
@@ -88,9 +89,193 @@
         <section class="courseInfo relative py-5">
             <div class="container px-3">
 
-                <h4 class="text-sm lg:text-lg font-medium">Your Course</h4>
+                <h4 class="text-lg lg:text-xl font-medium mb-3">Your Course</h4>
 
-                
+                <!-- Course Card -->
+                <div class="courseCard border p-4 mb-8 rounded-md flex flex-col md:flex-row gap-4 shadow-md">
+                    <div class="courseImg">
+                        <img src="img/Video.png" class="rounded-md w-full md:w-auto" alt="Violin Course">
+                    </div>
+                    <div class="courseDetails flex-1">
+                        <h3 class="mb-3 flex gap-2 flex-col md:flex-row items-start md:items-center justify-between text-xl md:text-2xl text-primary font-medium">
+                            Violin <span class="courseStatus py-1 px-3 rounded-md bg-[#FFEBB3] font-medium text-sm text-[#333]">Not Started</span>
+                        </h3>
+                        <p class="text-justify mb-5">Learn to play violin with expert music teachers online at Enthuziastic. Start from scratch and learn to play popular melodies. Kids or adults, anybody can join this course and start learning violin.
+                        </p>
+
+                        <div class="flex flex-col lg:flex-row items-start lg:items-center gap-3">
+                            <div class="courseFeatures grid grid-cols-2 lg:grid-cols-3 gap-1 flex-1 w-full">
+                                <p class="text-sm md:text-base"><i class="fa fa-check-circle text-primary mr-2"></i> <strong>120 live</strong> tutoring sessions</p>
+                                <p class="text-sm md:text-base"><i class="fa fa-check-circle text-primary mr-2"></i> Access on <strong>mobile and web</strong></p>
+                                <p class="text-sm md:text-base"><i class="fa fa-check-circle text-primary mr-2"></i> Access on <strong>mobile and web</strong></p>
+                                <p class="text-sm md:text-base"><i class="fa fa-check-circle text-primary mr-2"></i> <strong>12 Modules</strong></p>
+                                <p class="text-sm md:text-base"><i class="fa fa-check-circle text-primary mr-2"></i> <strong>Certificate</strong> of completion</p>
+                                <p class="text-sm md:text-base"><i class="fa fa-check-circle text-primary mr-2"></i> <strong>Certificate</strong> of completion</p>
+                            </div>
+
+                            <button class="px-6 py-2 rounded-md flex items-center gap-2 font-medium text-sm lg:text-lg text-slate-100 bg-primary hover:bg-pink-800 transition-colors">
+                                <img src="img/icons/file.svg" alt="" class="h-5 md:h-auto"> Curriculum
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Stats/Numbers -->
+                <div class="flex flex-col md:flex-row justify-around items-center gap-3 rounded-md p-3 md:p-4 mb-8 text-white bg-secondary shadow-md">
+                    <div class="courseStat flex items-center gap-2 text-base md:text-xl font-medium">
+                        <span class="inline-block rounded-[38px] h-[38px] w-[38px] leading-[38px] md:leading-[38px] text-center text-sm md:text-base bg-white text-secondary">24</span>
+                        Total Sessions
+                    </div>
+                    <div class="courseStat flex items-center gap-2 text-base md:text-xl font-medium">
+                        <span class="inline-block rounded-[38px] h-[38px] w-[38px] leading-[38px] md:leading-[38px] text-center text-sm md:text-base bg-white text-secondary">14</span>
+                        Sessions not Started
+                    </div>
+                    <div class="courseStat flex items-center gap-2 text-base md:text-xl font-medium">
+                        <span class="inline-block rounded-[38px] h-[38px] w-[38px] leading-[38px] md:leading-[38px] text-center text-sm md:text-base bg-white text-secondary">10</span>
+                        Sessions Completed
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="block md:flex gap-6 mb-5">
+                    <!--  -->
+                    <div class="w-full md:w-5/12 lg:w-4/12 xl:w-3/12 mb-6 md:mb-0 rounded-md overflow-hidden bg-[#FFF1F7]">
+                        <div class="bg-amber-200 text-center px-2 py-2 font-medium">
+                            Batch No. - 1234567
+                        </div>
+                        <div class="p-4 lg:p-4">
+                            <!-- Course Meta items -->
+                            <div class="courseMeta border-b mb-5">
+                                <div class="flex items-center gap-1 mb-2 md:mb-4">
+                                    <img src="img/icons/play.svg" class="max-h-7 w-7 mr-3" alt="">
+                                    <span class="">Sessions</span>
+                                    <strong class="text-base lg:text-xl font-medium">: 24</strong>
+                                </div>
+                                <div class="flex items-center gap-1 mb-2 md:mb-4">
+                                    <img src="img/icons/user-group.svg" class="max-h-7 w-7 mr-3" alt="">
+                                    <span class="">Max. Learners</span>
+                                    <strong class="text-base lg:text-xl font-medium">: 4</strong>
+                                </div>
+                                <div class="flex items-center gap-1 mb-2 md:mb-4">
+                                    <img src="img/icons/translate.svg" class="max-h-7 w-7 mr-3" alt="">
+                                    <span class="">Language</span>
+                                    <strong class="text-base lg:text-xl font-medium">: English</strong>
+                                </div>
+                                <div class="flex items-center gap-1 mb-2 md:mb-4">
+                                    <img src="img/icons/user.svg" class="max-h-7 w-7 mr-3" alt="">
+                                    <span class="">Age Group</span>
+                                    <strong class="text-base lg:text-xl font-medium">: 12 to 24</strong>
+                                </div>
+                                <div class="flex items-center gap-1 mb-4">
+                                    <img src="img/icons/calendar.svg" class="max-h-7 w-7 mr-3" alt="">
+                                    <span class="">Start Date</span>
+                                    <strong class="text-base lg:text-xl font-medium">: 10 Aug 2023</strong>
+                                </div>
+                            </div>
+
+                            <!-- Schedule Session Week -->
+                            <h5 class="text-gray-900 font-medium mb-3">Schedule <strong class="font-semibold">(Session/ Week - 4)</strong></h5>
+                            <div class="couresWeek flex border-b pb-5 mb-5">
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border bg-white h-[29px] w-[29px] mx-auto flex items-center justify-center hover:bg-primary hover:text-white transition-colors not-italic text-xs mb-2">Mo</i>
+                                    <span class="text-xs hidden leading-4">08:00<br>AM</span>
+                                </div>
+
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border bg-white h-[29px] w-[29px] mx-auto flex items-center justify-center hover:bg-primary hover:text-white transition-colors not-italic text-xs mb-2">Tu</i>
+                                    <span class="text-xs hidden leading-4">08:00 AM</span>
+                                </div>
+
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border active h-[29px] w-[29px] mx-auto flex items-center justify-center bg-primary text-white transition-colors not-italic text-xs mb-2">We</i>
+                                    <span class="text-xs inline-block leading-4">08:00 AM</span>
+                                </div>
+
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border bg-white h-[29px] w-[29px] mx-auto flex items-center justify-center hover:bg-primary hover:text-white transition-colors not-italic text-xs mb-2">Th</i>
+                                    <span class="text-xs hidden leading-4">08:00 AM</span>
+                                </div>
+
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border active h-[29px] w-[29px] mx-auto flex items-center justify-center bg-primary text-white transition-colors not-italic text-xs mb-2">Fr</i>
+                                    <span class="text-xs inline-block leading-4">08:00 AM</span>
+                                </div>
+
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border bg-white h-[29px] w-[29px] mx-auto flex items-center justify-center hover:bg-primary hover:text-white transition-colors not-italic text-xs mb-2">Sa</i>
+                                    <span class="text-xs hidden leading-4">08:00 AM</span>
+                                </div>
+
+                                <div class="text-center w-[38px]">
+                                    <i class="rounded-md border bg-white h-[29px] w-[29px] mx-auto flex items-center justify-center hover:bg-primary hover:text-white transition-colors not-italic text-xs mb-2">Su</i>
+                                    <span class="text-xs leading-4 hidden">08:00 AM</span>
+                                </div>
+                            </div>
+
+                            <!-- Host / Teacher -->
+                            <h5 class="text-gray-500 mb-1">Host / Teacher</h5>
+                            <div class="courseHost flex items-center gap-2 mb-3">
+                                <img src="img/users/1.png" class="h-9 w-9 rounded-[50%] border" alt="">
+                                <div class="hostName">
+                                    <p class="font-medium text-gray-900">Avinash Dave</p>
+                                    <div class="rating text-yellow-500">
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span class="text-gray-900">(120)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Enrolled Learners -->
+                            <h5 class="text-gray-500 mb-1">Enrolled Learners</h5>
+                            <div class="usersEnrolled flex ">
+                                <img src="img/users/1.png" class="h-9 w-9 rounded-[50%] border" alt="">
+                                <img src="img/users/2.png" class="h-9 w-9 rounded-[50%] border -mx-1" alt="">
+                                <img src="img/users/3.png" class="h-9 w-9 rounded-[50%] border -mx-0" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Curriculum -->
+                    <div class="w-full md:w-7/12 lg:w-8/12 xl:w-9/12">
+                        <h4 class="mt-4 mb-3 text-lg md:text-xl font-semibold">Curriculum</h4>
+                        <div class="rounded-md border px-3 py-5">
+                            <p class="mb-5 text-black">The violin course is designed to provide comprehensive instruction and guidance for beginners and intermediate learners looking to master the art of playing the violin. Throughout the course, students will receive a well-structured curriculum that covers the essential aspects of violin playing, from the basics to more advanced techniques.</p>
+
+                            <p class="mb-5 text-black">The course begins with an introduction to the violin, its parts, and how to properly hold the instrument and the bow. Students will learn the fundamentals of reading sheet music and understanding musical notation specific to the violin. As the course progresses, students will be introduced to basic bowing techniques, finger placements, and scales. They will gradually advance to more complex bowing styles, vibrato, and shifting positions on the fingerboard. Proper posture and hand positioning will be emphasized to ensure students develop good habits and prevent injuries.</p>
+                                
+                            <p class="mb-5 text-black">Throughout the course, students will be exposed to a variety of musical pieces, ranging from classical to contemporary, allowing them to apply their newly acquired skills and improve their performance abilities. The violin course will also cover music theory relevant to the instrument, enabling students to grasp the principles of harmony, rhythm, and musical expression, enhancing their overall musicianship.</p>
+                                
+                            <p class="text-black">In addition to individual practice, the course may include ensemble playing opportunities, providing students with the chance to collaborate with other musicians and develop their ensemble skills. By the end of the course, students should have gained a solid foundation in violin playing, a good understanding of music theory, and the ability to perform various pieces confidently. Whether pursuing a professional music career or playing the violin for personal enjoyment, this course aims to equip students with the necessary skills to continue advancing their musical journey.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="block md:flex gap-6">
+                    <!--  -->
+                    <div class="w-full md:w-5/12 lg:w-4/12 xl:w-3/12 mb-3 md:mb-0">
+                        <div class="coursePrice">
+                            <small class="text-gray-500 text-sm leading-none">Pro Rated Price</small>
+                            <p class="text-gray-900 font-bold text-3xl">$ 28.89 <span class="text-sm font-medium">(14 sessions)</span></p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div class="w-full md:w-7/12 lg:w-8/12 xl:w-9/12 grid grid-cols-2 gap-3">
+                        <button class="px-6 py-2 rounded-md flex items-center justify-center gap-2 font-medium text-sm lg:text-lg text-slate-100 bg-primary hover:bg-pink-800 transition-colors">
+                            Apply to Learn
+                        </button>
+
+                        <button class="px-6 py-2 rounded-md flex items-center justify-center gap-2 font-medium text-sm lg:text-lg border border-primary text-primary hover:text-white hover:bg-pink-800 transition-colors">
+                            Apply to Teach
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
