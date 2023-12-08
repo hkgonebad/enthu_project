@@ -27,12 +27,16 @@
                 <!-- Nav -->
                 <div class="nav relative">
                     <div class="navCollapse hidden lg:flex items-center gap-5 xl:gap-10 font-medium">
-                        <div class="dropdown">
-                            <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Courses</a>
-                            <div class="dropdown-menu">
-                                <a href="#!" class="dropdown-item transition-all hover:text-primary active:text-primary"></a>
+                        <div class="group relative dropdown">
+                            <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Courses <i class="fa fa-angle-down text-sm"></i></a>
+                            
+                            <div class="dropdown-menu absolute hidden min-w-[200px] rounded-md bg-white border border-gray-300 p-3">
+                                <a href="#!" class="dropdown-item block mb-2 transition-all hover:text-primary active:text-primary">Primary</a>
+                                <a href="#!" class="dropdown-item block mb-2 transition-all hover:text-primary active:text-primary">Secondary</a>
+                                <a href="#!" class="dropdown-item block transition-all hover:text-primary active:text-primary">Extras</a>
                             </div>
                         </div>
+
                         <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Activities</a>
                         <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Offers</a>
                         <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">About Us</a>
@@ -49,6 +53,29 @@
                         <a href="#!"><img src="img/LinkedIn.svg" alt="EnthuZiastic LinkedIn"></a>
                         <a href="#!"><img src="img/Facebook.svg" alt="EnthuZiastic Facebook"></a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Off-canvas menu for small screens -->
+        <div class="offCanvas lg:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 z-50 transition-transform duration-300 ease-in-out transform translate-x-full">
+            <div class="offCanvasMenu absolute top-0 right-0 h-full bg-white w-64 p-4">
+                <!-- Content from the navCollapse goes here -->
+                <div class="lg:hidden flex flex-col items-center gap-4">
+                    <!-- Copy the content inside navCollapse here -->
+                    <div class="group relative dropdown">
+                        <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Courses <i class="fa fa-angle-down text-sm"></i></a>
+                        <div class="dropdown-menu absolute left-1/2 translate-x-[-50%] hidden min-w-[200px] rounded-md bg-white border border-gray-300 p-3">
+                            <a href="#!" class="dropdown-item block mb-2 transition-all hover:text-primary active:text-primary">Primary</a>
+                            <a href="#!" class="dropdown-item block mb-2 transition-all hover:text-primary active:text-primary">Secondary</a>
+                            <a href="#!" class="dropdown-item block transition-all hover:text-primary active:text-primary">Extras</a>
+                        </div>
+                    </div>
+
+                    <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Activities</a>
+                    <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Offers</a>
+                    <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">About Us</a>
+                    <a href="#!" class="nav-item transition-all hover:text-primary active:text-primary">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -86,7 +113,7 @@
         </section>
 
         <!-- Content -->
-        <section class="courseInfo relative py-5">
+        <section class="courseInfo relative py-5 mb-6">
             <div class="container px-3">
 
                 <h4 class="text-lg lg:text-xl font-medium mb-3">Your Course</h4>
@@ -286,9 +313,86 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-secondary text-white">
+        <div class="topFooter py-10">
+            <div class="container px-3">
+                <div class="flex flex-col lg:flex-row gap-3 my-4">
+                    <!--  -->
+                    <div class="basis-full flex-1 lg:basis-4/12 mb-4 lg:mb-0">
+                        <div class="footerInfo">
+                            <img src="img/logo-bg.svg" class="mb-4" alt="">
+                            <p class="mb-4 font-medium">EnthuZiastic is a vibrant and dynamic community dedicated to fostering a passion for learning and personal growth. </p>
 
+                            <div class="socials flex gap-3 ">
+                                <a href="#!" class="btn p-1 text-lg"><i class="fab fa-linkedin"></i></a>
+                                <a href="#!" class="btn p-1 text-lg"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#!" class="btn p-1 text-lg"><i class="fab fa-facebook"></i></a>
+                                <a href="#!" class="btn p-1 text-lg"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="basis-full lg:basis-8/12 grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="mb-4 lg:mb-0">
+                            <h4 class="uppercase text-sm font-bold mb-4">Company</h4>
+    
+                            <div class="links">
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">About Us</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Premium</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Blog</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Affiliate Program</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Get Coupon</a>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4 lg:mb-0">
+                            <h4 class="uppercase text-sm font-bold mb-4">Help and Support</h4>
+    
+                            <div class="links">
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Contact Us</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Knowledge Center</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Premium Support</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Sponsorships</a>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4 lg:mb-0">
+                            <h4 class="uppercase text-sm font-bold mb-4">Resources</h4>
+    
+                            <div class="links">
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Third-Party Tools</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Illustrations</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Themesberg</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Bluehost</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Stock Photos</a>
+                            </div>
+                        </div>
+    
+                        <div class="mb-4 lg:mb-0">
+                            <h4 class="uppercase text-sm font-bold mb-4">Legal</h4>
+    
+                            <div class="links">
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Privacy Policy</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">Terms & Conditions</a>
+                                <a href="#!" class="font-medium mb-2 block relative left-0 transition-all hover:text-yellow-100 hover:left-1">EULA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="bottomFooter">
+            <div class="container px-3">
+                <p class="border-t pt-4 pb-3 text-center text-sm">© 2023 EnthuZiastic, Inc. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
     
+    <!--  -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>
