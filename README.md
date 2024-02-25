@@ -31,4 +31,4 @@ Your contributions and improvements are invaluable. Let's collectively strive fo
 
 ## Demo
 
-Check out the live demo: [Enthu Project Demo]([hkgonebad.github.io/enthu_project/dist/])
+Check out the live demo: https://hkgonebad.github.io/enthu_project/dist/
